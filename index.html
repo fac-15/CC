@@ -7,27 +7,31 @@
     <meta name="description" content="Founders & Coders Week 1 Group Website: Colour Code">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Asap|Charmonman" rel="stylesheet">
     <script src="main.js" async></script>
+  
 </head>
 
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="">Item 1</a></li>
-            <li><a href="">Item 2</a></li>
-            <li><a href="">Item 3</a></li>
-        </ul>
-    </nav>
+    
 
-    <header role="">
-        <h1>Title</h1>
+    <header role="banner">
+        <img src="https://via.placeholder.com/50" alt="logo" />
+        <h1 class="large">Colour Code</h1>
+        <nav role="navigation">
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#team">The Team</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
+    <main role="main">
 
-        <section role="">
-            <p>About the team section</p>
+        <section aria-labelledby="about" id="about">
+            <h2 class="medium">About the Colour Code Team</h2>
             <figure>
                 <img src="https://via.placeholder.com/150" alt="person 1" />
                 <figcaption>person 1</figcaption>
@@ -47,7 +51,8 @@
         </section>
 
 
-        <section role="">
+        <section aria-labelledby="team" id="team">
+            <h3 class="medium">The Team</h3>
             <article role="person 1">
                 <p>person 1</p>
             </article>
@@ -63,8 +68,8 @@
         </section>
 
 
-        <section role="">
-            <p>contact us</p>
+        <section aria-labelledby="contact" id="contact">
+            <h3 class="medium">Contact Us</h3>
             <form action="/" method="post">
                 <label for="name">Name</label>
                 <input id="name" type="text" pattern="[a-zA-Z]+" required>
@@ -97,7 +102,7 @@
 
     </main>
 
-    <footer>Copyright Colour Code 2018</footer>
+    <footer role="contentinfo">Copyright Colour Code 2018</footer>
 </body>
 
 </html>
