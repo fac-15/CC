@@ -1,15 +1,23 @@
-// var nameRegex = /[a-zA-Z]/
+
 // var companyRegex = /[a-zA-Z]/
 // var emailRegex = /[\w_.]+@[\w_.]{3,}\.[a-zA-Z]{2,}$/
 // var numberRegex = /[0-9]/
 
 
+function validator() {
+    var nameRegex = /[^0-9]$/;  
+    // console.log(e);
+    // var nameValue = ;
+
+    // console.log(nameValue);
 
 
-// function validator() {
-//     var inputName = document.getElementById('first_name');
-//     inputName.textContent(nameRegex);
-//     console.log('clicked')
-// }
+    if(nameRegex.test('keydown')){
+        console.log('valid');
+    } else {
+        console.log('invalid')
+    }
+   
+}
 
-// document.getElementById('submit').addEventListener('click',validator, false);
+document.getElementById('name').addEventListener('keydown',validator);
