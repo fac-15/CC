@@ -1,51 +1,130 @@
 /* add styles here */
 
 /* reset css */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-
 
 /* our css */
 
@@ -56,39 +135,132 @@ rgb(4, 104, 101) */
 
 /* body styles */
 body {
-    /* font-family: 'Charmonman', cursive; */
-    font-family: 'Asap', sans-serif;
-    font-size : 16px / 1em;
-    line-height : 1.5;
-    color : black;
+  /* font-family: 'Charmonman', cursive; */
+  font-family: "Asap", sans-serif;
+  font-size: 16px / 1em;
+  line-height: 1.5;
+  color: rgb(4, 104, 101);
 }
 .large {
-    font-size : 2.5rem;
+  font-size: 2.5rem;
 }
 .medium {
-    font-size : 1.5rem;
+  font-size: 1.5rem;
 }
 
 nav,
 header,
 footer,
 section {
-    padding : 20px;
-    max-width : 1200px;
+  padding: 20px;
+  max-width: 1200px;
 }
 header,
 section {
-    border-bottom : 4px solid;
+  border-bottom: 4px solid;
 }
 header {
-    border-bottom-color : rgb(235, 235, 211);
+  border-bottom-color: rgb(235, 235, 211);
 }
 #about {
-    border-bottom-color : rgb(255, 155, 113)
+  border-bottom-color: rgb(255, 155, 113);
 }
 #team {
-    border-bottom-color : rgb(73, 220, 177);
+  border-bottom-color: rgb(73, 220, 177);
 }
 #contact {
-    border-bottom-color : rgb(4, 104, 101);
+  border-bottom-color: rgb(4, 104, 101);
+}
+
+.nav-bar {
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  padding: 0px;
+  z-index: 1;
+  background-image: linear-gradient(
+    40deg,
+    rgba(4, 104, 101, 0.9),
+    rgba(73, 220, 177, 0.9)
+  );
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.menu-item a {
+  padding: 4px;
+  text-decoration: none;
+  color: rgb(4, 104, 101);
+}
+
+main {
+  padding: 50px 20px 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sections {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* intro */
+.sections.intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.sections.intro h3,
+.sections.intro p {
+  display: block;
+  width: 100%;
+}
+
+.sections.intro article {
+  margin-top: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.round-img img {
+  border-radius: 75px;
+}
+.round-img figcaption {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+/* about the team */
+.bubble {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 155, 113, 0.8),
+    rgba(4, 104, 101, 0.8)
+  );
+}
+
+.bubble.right {
+  flex-direction: row-reverse;
 }
