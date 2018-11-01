@@ -42,9 +42,6 @@
 1. Title overlaps on navbar 
 2. Image should be shrunk 
 3. Text should be wrapping around images
-
-- General
-1. Change Submit text color
     
 **Stretch course**
 1. Search function on navbar
