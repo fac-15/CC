@@ -32,35 +32,23 @@ function validator(e) {
     // error message
     const errorP = e.target.nextElementSibling;
     
-    // add or remove error classes
-    // - not valid:
-    if (!e.target.validity.valid) {
-        // phone
-        if (e.target.id == 'number' && e.target.value.length>=13) {
-            e.target.className = 'error';
-            errorP.className = 'error-msg-show';
-        }
-        // not phone
-        else if(!e.target.id == 'number') {
-            e.target.className = 'error';
-            errorP.className = 'error-msg-show';
-        }
-        
-    }
-    // valid
-    else if (e.target.validity.valid) {
-        // not phone
-        e.target.className = '';
-        errorP.innerHTML = '';
-        errorP.className = 'error-msg';        
-    }
-
-
-    // phone
+    // add and remove error classes
+    // - phone (validity.valid not working as expected)
     if (e.target.id == 'number' && e.target.value.length<13) {
         e.target.className = '';
+        errorP.innerHTML = '';
+        errorP.className = 'error-msg';
+    }
+    // - not phone
+    else {
+        if (!e.target.validity.valid) {
+            e.target.className = 'error';
+            errorP.className = 'error-msg-show';
+        } else {
+            e.target.className = '';
             errorP.innerHTML = '';
             errorP.className = 'error-msg';
+        }
     }
 
 
@@ -87,16 +75,10 @@ function validator(e) {
         }
         // - phone
         else if (e.target.type == 'number' || e.target.id == 'number') {
-            // console.log(e.target.value.length);
-
             if (e.target.value.length>12) {
                 errorP.innerHTML = phoneMsg;
             }
         }
-        // - textarea (no longer included - see DOM selection below)
-        // else if (e.target.type == 'textarea') {
-        //     console.log('textarea');
-        // }
     }
 
 
@@ -109,8 +91,6 @@ const inputs = [...document.querySelectorAll('form input')];
 inputs.forEach(element=>element.addEventListener('input', validator));
 // const textarea = document.querySelector('textarea');
 // inputs.push(textarea);
-// console.log(inputs);
-
 
 
 
