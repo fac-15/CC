@@ -1,10 +1,10 @@
 # Team Colour Code one page website
 
 - colour code colours:
-  - <span style="color:rgb(235, 235, 211)">rgb(235, 235, 211)</span>;
-  - <span style="color:rgb(255, 155, 113)">rgb(255, 155, 113)</span>;
-  - <span style="color:rgb(73, 220, 177)">rgb(73, 220, 177)</span>;
-  - <span style="color:rgb(4, 104, 101)">rgb(4, 104, 101)</span>;
+  - ![#fffcfa](https://placehold.it/15/fffcfa/000000?text=+) `#fffcfa`
+  - ![#ff9b71](https://placehold.it/15/ff9b71/000000?text=+) `#ff9b71`
+  - ![#49dcb1](https://placehold.it/15/49dcb1/000000?text=+) `#49dcb1`
+  - ![#046865](https://placehold.it/15/046865/000000?text=+) `#046865`
 
 - ARIA stuff:
  - [regional landmarks](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/region.html).
