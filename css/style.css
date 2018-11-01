@@ -149,10 +149,12 @@ body {
 }
 .large {
   font-size: 2.25rem;
+  font-weight: bold;
 }
 .medium {
   font-size: 1.5rem;
-  text-align: center;
+  font-weight: bold;
+  font-family: "Charmonman", cursive;
 }
 
 nav,
@@ -257,6 +259,23 @@ main {
 .sections.intro p {
   display: block;
   width: 100%;
+  color: rgb(255, 252, 250);
+}
+
+.sections.intro h3{
+  font-family: "Charmonman", cursive;
+  font-size : 3em;
+  font-weight: bold;
+}
+
+.sections.intro p{
+  font-size : 1.3em;
+  font-weight: bold;
+}
+
+
+.name {
+  color: rgb(255, 252, 250) 
 }
 
 .sections.intro article {
@@ -266,6 +285,7 @@ main {
 }
 .round-img img {
   border-radius: 75px;
+  width:150px;
 }
 .round-img figcaption {
   font-size: 1.25rem;
@@ -281,6 +301,11 @@ main {
     rgba(255, 155, 113, 0.8),
     rgba(4, 104, 101, 0.8)
   ); */
+}
+
+.bubble img{
+  width: 200px;
+  height: 200px;
 }
 
 .bubble.right {
