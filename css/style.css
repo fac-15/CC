@@ -336,7 +336,7 @@ form {
   box-sizing : border-box;
   border-radius : .75rem;
 }
-@media and (max-width: 600px) {
+@media and (min-width: 600px) {
   form {
     margin-left : 50px;
     margin-right : 50px;
