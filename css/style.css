@@ -283,6 +283,11 @@ main {
   ); */
 }
 
+.bubble figcaption{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 .bubble.right {
   flex-direction: row-reverse;
 }
