@@ -39,8 +39,8 @@
 
 **Errors**
 - Mobile size
-    1. Title overlaps on navbar 
-    2. Image should be shrunk 
+1. Title overlaps on navbar 
+2. Image should be shrunk 
     
 **Stretch course**
 1. Search function on navbar
