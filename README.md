@@ -33,3 +33,9 @@
 **Form Validation**
 [email validation regex](https://www.w3resource.com/javascript/form/email-validation.php)
 [more on MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation)
+
+**Accessibility**
+![alt text](https://files.gitter.im/foundersandcoders/CC/T3xw/accessibility.png)
+
+**Errors**
+1. Title overlaps on navbar when it is mobile size
