@@ -39,3 +39,4 @@
 
 **Errors**
 1. Title overlaps on navbar when it is mobile size
+2. Image should be shrunk when it is mobile size
