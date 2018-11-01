@@ -1,11 +1,3 @@
-
-// var companyRegex = /[a-zA-Z]/
-// var emailRegex = /[\w_.]+@[\w_.]{3,}\.[a-zA-Z]{2,}$/
-// var numberRegex = /[0-9]/
-
-
-
-
 /*
 Name
     - letters a-z, case insensitive

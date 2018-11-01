@@ -140,16 +140,29 @@ body {
   font-size: 16px / 1em;
   line-height: 1.5;
   color: rgb(4, 104, 101);
+  background: 
+      linear-gradient(217deg, rgba(4, 104, 101, 0.9), rgba(250, 100, 0, 0) 70%),
+      linear-gradient(127deg, rgba(73, 220, 177, 0.8), rgba(0, 216, 150, 0) 70%),
+      linear-gradient(336deg, rgba(255, 155, 113, 0.8), rgba(0, 216, 150, 0) 70%);
+
+      
 }
 .large {
   font-size: 2.25rem;
+  font-weight: bold;
 }
 .medium {
   font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Charmonman", cursive;
+  margin-bottom: 15px;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> master
 nav,
 footer,
 section {
@@ -164,25 +177,20 @@ section {
 footer {
   width: 100%;
   max-width: 1200px;
-  margin : 0 auto;
+  margin: 0 auto;
 }
 
 #about {
   border-bottom-color: rgb(255, 155, 113);
 }
 #team {
-  border-bottom-color: rgb(73, 220, 177);
+  border-bottom-color: rgb(4, 104, 101);
 }
 #contact {
   border-bottom-color: rgb(4, 104, 101);
 }
 
-
-
-
-
-
-/* nav */ 
+/* nav */
 .nav-bar {
   position: fixed;
   height: 50px;
@@ -216,14 +224,12 @@ footer {
   top: 10px;
 }
 .logo h1 {
-  font-family: 'Charmonman', cursive;
-  color : white;
-  position : fixed;
-  top : 7px;
-  left : 90px;
+  font-family: "Charmonman", cursive;
+  color: rgb(255, 252, 250);
+  position: fixed;
+  top: 7px;
+  left: 90px;
 }
-
-
 
 /* menu */
 .menu {
@@ -246,11 +252,6 @@ main {
   flex-direction: column;
 }
 
-
-
-
-
-
 /* intro */
 .sections.intro {
   display: flex;
@@ -265,6 +266,23 @@ main {
 .sections.intro p {
   display: block;
   width: 100%;
+  color: rgb(255, 252, 250);
+}
+
+.sections.intro h3{
+  font-family: "Charmonman", cursive;
+  font-size : 3em;
+  font-weight: bold;
+}
+
+.sections.intro p{
+  font-size : 1.3em;
+  font-weight: bold;
+}
+
+
+.name {
+  color: rgb(255, 252, 250) 
 }
 
 .sections.intro article {
@@ -274,6 +292,7 @@ main {
 }
 .round-img img {
   border-radius: 75px;
+  width:150px;
 }
 .round-img figcaption {
   font-size: 1.25rem;
@@ -284,17 +303,27 @@ main {
 .bubble {
   display: flex;
   flex-direction: row;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     90deg,
     rgba(255, 155, 113, 0.8),
     rgba(4, 104, 101, 0.8)
-  );
+  ); */
+}
+
+.bubble figcaption{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.bubble img{
+  width: 200px;
+  height: 200px;
 }
 
 .bubble.right {
   flex-direction: row-reverse;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -350,3 +379,39 @@ form button {
 .error-msg-show {
   visibility : visible;
 }
+=======
+.links {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: none;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Asap", sans-serif;
+  color: rgb(4, 104, 101);
+  margin: 8px;
+}
+
+footer {
+  color: rgb(4, 104, 101);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  text-align: center;
+  margin: 20px;
+}
+
+input {
+  margin: 5px;
+}
+
+>>>>>>> master
