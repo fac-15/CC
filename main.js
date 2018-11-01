@@ -114,9 +114,6 @@ inputs.forEach(element=>element.addEventListener('input', validator));
 
 
 
-
-
-
 // ______________________
 // logo scroll to top
 const goToTop = function() {
