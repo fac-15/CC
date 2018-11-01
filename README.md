@@ -40,3 +40,7 @@
 **Errors**
 1. Title overlaps on navbar when it is mobile size
 2. Image should be shrunk when it is mobile size
+
+**Stretch course**
+1. Search function on navbar
+2. Display correct section more clearly when the profile pictures/navbar clicked
