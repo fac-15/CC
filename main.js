@@ -21,3 +21,10 @@ function validator() {
 }
 
 document.getElementById('name').addEventListener('keydown',validator);
+
+var goToTop = function() {
+    window.scrollTo(0,0);
+}
+
+var logo = document.querySelector('.logo');
+logo.addEventListener('click', goToTop);
