@@ -166,7 +166,7 @@ nav,
 footer,
 section {
   padding: 20px;
-  box-sizing : border-box;
+  box-sizing: border-box;
   max-width: 1200px;
 }
 section {
@@ -362,67 +362,71 @@ main {
 
 /* form */
 form {
-  background-color : gainsboro;
-  margin : 1rem 0 2rem;
-  padding : 1.5rem;
-  box-sizing : border-box;
-  border-radius : .75rem;
-  background: linear-gradient(127deg, rgba(4, 104, 101, 0.9), rgba(250, 100, 0, 0) 70%),
+  background-color: rgb(255, 252, 250);
+  margin: 1rem 0 2rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 0.75rem;
+  background: linear-gradient(
+      127deg,
+      rgba(4, 104, 101, 0.9),
+      rgba(250, 100, 0, 0) 70%
+    ),
     linear-gradient(37deg, rgba(73, 220, 177, 0.8), rgba(0, 216, 150, 0) 70%),
     linear-gradient(246deg, rgba(255, 155, 113, 0.8), rgba(0, 216, 150, 0) 70%);
 }
 form input,
 form label {
-  display : block;
+  display: block;
 }
 form label {
-  color : white;
-  padding-bottom : .25rem;
+  color: rgb(255, 252, 250);
+  padding-bottom: 0.25rem;
 }
 form input,
 form textarea {
   font-family: "Asap", sans-serif;
   font-size: 16px / 1em;
-  border : 0;
-  padding : .5rem;
-  border-radius : .25rem;
-  font-size : 1rem;
-  width : 100%;
-  display : block;
-  box-sizing : border-box;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
 }
 form button {
-  margin-top : 1rem;
-  padding : 1rem;
-  font-size : 1.25rem;
-  background : rgba(4, 104, 101, 0.8);
-  color : white;
-  border : 0;
-  border-radius : .5rem;
-  cursor : pointer;
-  transition : background-color ease-in-out .3s;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.25rem;
+  background: rgba(4, 104, 101, 0.8);
+  color: rgb(255, 252, 250);
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color ease-in-out 0.3s;
+}
+form button a {
+  color: rgb(255, 252, 250);
 }
 form button:hover,
 form button:focus {
-  background : rgb(255, 155, 113);
+  background: rgb(255, 155, 113);
 }
-
-
-
 
 /* error class */
 .error {
-  border : 2px solid red;
+  border: 2px solid red;
 }
 .error-msg,
 .error-msg-show {
-  visibility : hidden;
-  color : red;
-  background : white;
-  padding : .25rem;
+  visibility: hidden;
+  color: red;
+  background: rgb(255, 252, 250);
+  padding: 0.25rem;
 }
 .error-msg-show {
-  visibility : visible;
+  visibility: visible;
 }
 
 .links {
@@ -450,14 +454,12 @@ footer {
   flex-direction: column;
 }
 
-
-
 /* mid to large screen stuff */
 @media only screen and (min-width: 600px) {
   #about > h2,
   #about > p,
   form {
-    max-width : 80%;
-    margin : 0 auto 2rem;
+    max-width: 80%;
+    margin: 0 auto 2rem;
   }
 }
