@@ -4,7 +4,7 @@
 
 ### Welcome to the Colour Code code base!
 
-#### Best lesson learned...:
+#### Lessons learned...:
 
 - We had forgotten to check out to a new branch...
 - We wrote an entire function directly into our local master branch...
