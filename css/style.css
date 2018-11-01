@@ -142,26 +142,31 @@ body {
   color: rgb(4, 104, 101);
 }
 .large {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 .medium {
   font-size: 1.5rem;
 }
 
+
+
+
 nav,
-header,
 footer,
 section {
   padding: 20px;
   max-width: 1200px;
 }
-header,
 section {
   border-bottom: 4px solid;
 }
-header {
-  border-bottom-color: rgb(235, 235, 211);
+.sections,
+footer {
+  width: 100%;
+  max-width: 1200px;
+  margin : 0 auto;
 }
+
 #about {
   border-bottom-color: rgb(255, 155, 113);
 }
@@ -172,6 +177,12 @@ header {
   border-bottom-color: rgb(4, 104, 101);
 }
 
+
+
+
+
+
+/* nav */ 
 .nav-bar {
   position: fixed;
   height: 50px;
@@ -193,9 +204,28 @@ header {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  position: relative;
 }
+
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: fixed;
+  left: 15px;
+  top: 10px;
+}
+.logo h1 {
+  font-family: 'Charmonman', cursive;
+  color : white;
+  position : fixed;
+  top : 7px;
+  left : 90px;
+}
+
+
+
+/* menu */
 .menu {
   display: flex;
   flex-direction: row;
@@ -216,10 +246,10 @@ main {
   flex-direction: column;
 }
 
-.sections {
-  width: 100%;
-  max-width: 1200px;
-}
+
+
+
+
 
 /* intro */
 .sections.intro {
