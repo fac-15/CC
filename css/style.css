@@ -156,10 +156,14 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   font-family: "Charmonman", cursive;
+<<<<<<< HEAD
   display: block;
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
+=======
+  margin-bottom: 15px;
+>>>>>>> master
 }
 
 nav,
