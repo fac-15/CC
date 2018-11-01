@@ -1,7 +1,7 @@
 # Team Colour Code one page website
 
 - colour code colours:
-  - ![#FFFAFA](https://placehold.it/15/FFFAFA/000000?text=+) `#FFFAFA`
+  - ![#fffcfa](https://placehold.it/15/fffcfa/000000?text=+) `#fffcfa`
   - ![#ff9b71](https://placehold.it/15/ff9b71/000000?text=+) `#ff9b71`
   - ![#49dcb1](https://placehold.it/15/49dcb1/000000?text=+) `#49dcb1`
   - ![#046865](https://placehold.it/15/046865/000000?text=+) `#046865`
