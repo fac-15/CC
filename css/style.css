@@ -156,20 +156,17 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   font-family: "Charmonman", cursive;
-<<<<<<< HEAD
   display: block;
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
-=======
-  margin-bottom: 15px;
->>>>>>> master
 }
 
 nav,
 footer,
 section {
   padding: 20px;
+  box-sizing : border-box;
   max-width: 1200px;
 }
 section {
@@ -363,6 +360,58 @@ main {
   grid-row-end: base;
 }
 
+/* form */
+form {
+  background-color : gainsboro;
+  margin : 1rem 0;
+  padding : 1.5rem;
+  box-sizing : border-box;
+  border-radius : .75rem;
+}
+@media and (min-width: 600px) {
+  form {
+    margin-left : 50px;
+    margin-right : 50px;
+  }
+}
+
+form input,
+form label {
+  display : block;
+}
+form input,
+form textarea {
+  border : 0;
+  padding : .25rem;
+  font-size : 1rem;
+  width : 100%;
+  display : block;
+  box-sizing : border-box;
+}
+form button {
+  margin-top : 1rem;
+  padding : 1rem;
+  font-size : 1.25rem;
+  background : rgba(4, 104, 101, 0.8);
+  color : white;
+  border : 0;
+  border-radius : .5rem;
+}
+
+/* error class */
+.error {
+  border : 2px solid red;
+}
+.error-msg,
+.error-msg-show {
+  visibility : hidden;
+  color : red;
+  padding : .25rem 0;
+}
+.error-msg-show {
+  visibility : visible;
+}
+
 .links {
   width: 100%;
   flex-direction: row;
@@ -388,11 +437,3 @@ footer {
   flex-direction: column;
 }
 
-form {
-  text-align: center;
-  margin: 20px;
-}
-
-input {
-  margin: 5px;
-}

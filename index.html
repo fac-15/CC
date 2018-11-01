@@ -98,24 +98,28 @@
             <form action="/" method="post">
                 <label for="name">Name</label>
                 <input id="name" type="text" pattern="[a-zA-Z\s]+" placeholder='Full Name' required>
+                <p class="error-msg"></p>
                 <br>
 
                 <label for="companyName">Company Name</label>
-                <input id="companyName" type="text" placeholder='Company Name' required>
+                <input id="companyName" type="text" pattern="[a-zA-Z\s]+" placeholder='Company Name'required>
+                <p class="error-msg"></p>
                 <br>
 
                 <label for="email">Email</label>
-                <input id="email" type="email" placeholder='E-mail' pattern="[\w_.]+@[\w_.]{3,}\.{1}[a-z]{2,}$"
-                    required>
+                <input id="email" type="email" placeholder='E-mail' pattern="[\w_.]+@[\w_.]{3,}\.{1}[a-z]{2,}$" required>
+                <p class="error-msg"></p>
+
                 <br>
 
-                <label for="number">Number</label>
-                <input id="number" type="text" placeholder='Contact Number' pattern="[0-9]{11}" required>
+                <label for="number">Contact Number</label>
+                <input id="number" type="number" placeholder='Contact Number' pattern="[0-9]{11}" required>
+                <p class="error-msg"></p>
                 <br>
 
 
                 <label for="message">Message</label>
-                <input id="message" type="text" placeholder='Message'>
+                <textarea id="message" placeholder='Message' rows="5" cols="33" maxlength="200"></textarea>
 
                 <button type="submit">Submit</button>
             </form>
