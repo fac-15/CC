@@ -363,26 +363,29 @@ main {
 /* form */
 form {
   background-color : gainsboro;
-  margin : 1rem 0;
+  margin : 1rem 0 2rem;
   padding : 1.5rem;
   box-sizing : border-box;
   border-radius : .75rem;
+  background: linear-gradient(127deg, rgba(4, 104, 101, 0.9), rgba(250, 100, 0, 0) 70%),
+    linear-gradient(37deg, rgba(73, 220, 177, 0.8), rgba(0, 216, 150, 0) 70%),
+    linear-gradient(246deg, rgba(255, 155, 113, 0.8), rgba(0, 216, 150, 0) 70%);
 }
-@media and (min-width: 600px) {
-  form {
-    margin-left : 50px;
-    margin-right : 50px;
-  }
-}
-
 form input,
 form label {
   display : block;
 }
+form label {
+  color : white;
+  padding-bottom : .25rem;
+}
 form input,
 form textarea {
+  font-family: "Asap", sans-serif;
+  font-size: 16px / 1em;
   border : 0;
-  padding : .25rem;
+  padding : .5rem;
+  border-radius : .25rem;
   font-size : 1rem;
   width : 100%;
   display : block;
@@ -396,7 +399,16 @@ form button {
   color : white;
   border : 0;
   border-radius : .5rem;
+  cursor : pointer;
+  transition : background-color ease-in-out .3s;
 }
+form button:hover,
+form button:focus {
+  background : rgb(255, 155, 113);
+}
+
+
+
 
 /* error class */
 .error {
@@ -406,7 +418,8 @@ form button {
 .error-msg-show {
   visibility : hidden;
   color : red;
-  padding : .25rem 0;
+  background : white;
+  padding : .25rem;
 }
 .error-msg-show {
   visibility : visible;
@@ -437,3 +450,14 @@ footer {
   flex-direction: column;
 }
 
+
+
+/* mid to large screen stuff */
+@media only screen and (min-width: 600px) {
+  #about > h2,
+  #about > p,
+  form {
+    max-width : 80%;
+    margin : 0 auto 2rem;
+  }
+}

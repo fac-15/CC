@@ -35,13 +35,32 @@ function validator(e) {
     // add or remove error classes
     // - not valid:
     if (!e.target.validity.valid) {
-        e.target.className = 'error';
-        errorP.className = 'error-msg-show';
+        // phone
+        if (e.target.id == 'number' && e.target.value.length>=13) {
+            e.target.className = 'error';
+            errorP.className = 'error-msg-show';
+        }
+        // not phone
+        else if(!e.target.id == 'number') {
+            e.target.className = 'error';
+            errorP.className = 'error-msg-show';
+        }
+        
     }
     // valid
-    if (e.target.validity.valid) {
+    else if (e.target.validity.valid) {
+        // not phone
         e.target.className = '';
         errorP.innerHTML = '';
+        errorP.className = 'error-msg';        
+    }
+
+
+    // phone
+    if (e.target.id == 'number' && e.target.value.length<13) {
+        e.target.className = '';
+            errorP.innerHTML = '';
+            errorP.className = 'error-msg';
     }
 
 
@@ -49,7 +68,7 @@ function validator(e) {
     const nameMsg = 'Please enter a valid name. You can enter letters a-z, upper and lower case';
     const companyMsg = 'Please enter a valid company name. You can enter letters a-z, upper and lower case';
     const emailMsg = 'Please enter a valid email address.';
-    const phoneMsg = 'Your phone number is too long. Please enter up to 12 digits only.';
+    const phoneMsg = 'Your phone number is too long. Please enter a valid UK phone number';
 
 
     // target different input fields, if they are invalid:
@@ -68,6 +87,8 @@ function validator(e) {
         }
         // - phone
         else if (e.target.type == 'number' || e.target.id == 'number') {
+            // console.log(e.target.value.length);
+
             if (e.target.value.length>12) {
                 errorP.innerHTML = phoneMsg;
             }
@@ -77,7 +98,7 @@ function validator(e) {
         //     console.log('textarea');
         // }
     }
-    
+
 
    
 }
