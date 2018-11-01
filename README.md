@@ -1,5 +1,7 @@
 ## Team Colour Code one page website
 
+![](https://thumbs.gfycat.com/IllfatedSplendidArcticwolf-size_restricted.gif)
+
 ### Welcome to the Colour Code code base!
 
 #### Best lesson learned...:
