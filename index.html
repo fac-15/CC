@@ -6,6 +6,7 @@
     <title>Colour Code</title>
     <meta name="description" content="Founders & Coders Week 1 Group Website: Colour Code">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
@@ -23,7 +24,14 @@
         </div>
 
         <nav role="navigation">
-            <h2>Main Menu</h2>
+            <a id="menu-button" href="">
+                <h2>Main Menu</h2>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </a>
             <ul class="menu">
                 <li class="menu-item"><a href="#team">The Team</a></li>
                 <li class="menu-item"><a href="#about">About Us</a></li>
@@ -72,7 +80,7 @@
 
         </section>
 
-        <section aria-labelledby="about" id="about" class="sections" >
+        <section aria-labelledby="about" id="about" class="sections">
             <h2 class="medium">About the Colour Code Team</h2>
             <p>We are four colourful young professional developers from diverse backgrounds.
                 We want to help solve your development issues! We are currently only able to solve small scale problems

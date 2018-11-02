@@ -1,4 +1,3 @@
-
 /* body styles */
 body {
   /* font-family: 'Charmonman', cursive; */
@@ -75,10 +74,6 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
-/* hide the h2 */
-.nav-bar h2 {
-  display : none;
-}
 
 .logo {
   position: relative;
@@ -101,19 +96,121 @@ footer {
   left: 90px;
 }
 
-/* menu */
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
+
+
+
+
+
+/* - - - - - - - - */
+/* responsive menu */
+/* - hide the h2 */
+.nav-bar h2 {
+  display : none;
 }
 
+.menu {
+  display: none;
+}
+.hamburger {
+  width : 3rem;
+  height : 2.5rem;
+  cursor : pointer;
+}
+.hamburger > div {
+  width : 100%;
+  height : .5rem;
+  background-color : rgb(4, 104, 101);
+  margin-top : .5rem;
+  transform-origin : 0 0;
+  transition : transform ease-in-out .5s;
+}
+.hamburger > div:first-child {
+  margin-top : 0;
+}
+
+
+
+@media only screen and (max-width: 599px) {
+  /* menu toggled class - added to nav-bar */
+  .toggled-on {
+    /* margin-top : 150px; */
+    height : 250px;
+    text-align : center;
+  }
+  .toggled-on nav {
+    width : 100%;
+  }
+  .toggled-on .menu {
+    display : block;
+    padding-top : 40px;
+  }
+
+  /* button and hamburger */
+  .toggled-on #menu-button {
+    position : absolute;
+    top : -3px;
+    right : 12px;
+  }
+  .toggled-on .hamburger > div:nth-child(1) {
+    transform : skew(0deg,34deg);
+  }
+  .toggled-on .hamburger > div:nth-child(2) {
+    visibility : hidden;
+  }
+  .toggled-on .hamburger > div:nth-child(3) {
+    transform : skew(0deg,-34deg);
+  }
+
+
+  /* make menu items larger */
+  .toggled-on .menu-item {
+    margin-top : 1rem;
+  }
+  .toggled-on .menu-item a {
+    font-size : 1.25rem;
+    padding : .5rem;
+    color : white;
+  }
+}
+
+
+
+
+
+
+
+/* menu list items */
 .menu-item a {
   padding: 4px;
   text-decoration: none;
   color: rgb(4, 104, 101);
 }
+.menu-item a:hover,
+.menu-item a:focus,
+.menu-item a:active {
+  text-decoration : underline;
+}
 
+
+@media only screen and (min-width: 600px) {
+  /* reveal the menu */
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #menu-button {
+    display : none;
+  }
+}
+
+
+
+
+
+
+/* - - - - - - - - */
 main {
   padding: 50px 20px 0px 20px;
   display: flex;
@@ -161,7 +258,7 @@ main {
 }
 /* hide the h4 */
 .sections.intro article h4 {
-  display : none;
+  display: none;
 }
 .round-img img {
   border-radius: 75px;
@@ -172,67 +269,70 @@ main {
   margin-top: 0.5rem;
 }
 
-/* r the team */
-.bubble {
-  display: grid;
-  grid-template-columns: [s] 1fr [begin] 1fr [img-end] 5fr [text-end] 1fr [e];
-  grid-template-rows: [s] 10px [roof] 20px [gap] 10px [text-begin] auto [base] 10px [e];
-}
+/* about the team */
+/* grid */
+@media only screen and (min-width: 1000px) {
+  .bubble {
+    display: grid;
+    grid-template-columns: [s] 1fr [begin] 1fr [img-end] 5fr [text-end] 1fr [e];
+    grid-template-rows: [s] 10px [roof] 20px [gap] 10px [text-begin] auto [base] 10px [e];
+  }
 
-.bubble img {
-  width: 200px;
-  height: 200px;
-  grid-column-start: begin;
-  grid-column-end: img-end;
-  grid-row-start: roof;
-  grid-row-end: base;
-  border-radius: 50px;
-}
+  .bubble img {
+    width: 12rem;
+    height: 12rem;
+    grid-column-start: begin;
+    grid-column-end: img-end;
+    grid-row-start: roof;
+    grid-row-end: base;
+    border-radius: 50px;
+  }
 
-.bubble figcaption {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 0.5em;
-  padding: 2px;
-  grid-column-start: img-end;
-  grid-column-end: text-end;
-  grid-row-start: roof;
-  grid-row-end: text-begin;
-}
+  .bubble figcaption {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 2px;
+    grid-column-start: img-end;
+    grid-column-end: text-end;
+    grid-row-start: roof;
+    grid-row-end: text-begin;
+  }
 
-.bubble p {
-  margin: 0.8em;
-  grid-column-start: img-end;
-  grid-column-end: text-end;
-  grid-row-start: text-begin;
-  grid-row-end: base;
-}
+  .bubble p {
+    margin: 0.8em;
+    grid-column-start: img-end;
+    grid-column-end: text-end;
+    grid-row-start: text-begin;
+    grid-row-end: base;
+  }
 
-.bubble.right {
-  display: grid;
-  grid-template-columns: [s] 1fr [begin] 5fr [img-start] 1fr [img-end] 1fr [e];
-  grid-template-rows: [s] 10px [roof] 20px [gap] 10px [text-begin] auto [base] 10px [e];
-}
+  .bubble.right {
+    display: grid;
+    grid-template-columns: [s] 1fr [begin] 5fr [img-start] 1fr [img-end] 1fr [e];
+    grid-template-rows: [s] 10px [roof] 20px [gap] 10px [text-begin] auto [base] 10px [e];
+  }
 
-.bubble.right img {
-  grid-column-start: img-start;
-  grid-column-end: img-end;
-  grid-row-start: roof;
-  grid-row-end: base;
-}
+  .bubble.right img {
+    grid-column-start: img-start;
+    grid-column-end: img-end;
+    grid-row-start: roof;
+    grid-row-end: base;
+  }
 
-.bubble.right figcaption {
-  grid-column-start: begin;
-  grid-column-end: img-start;
-  grid-row-start: roof;
-  grid-row-end: text-begin;
-}
+  .bubble.right figcaption {
+    grid-column-start: begin;
+    grid-column-end: img-start;
+    grid-row-start: roof;
+    grid-row-end: text-begin;
+  }
 
-.bubble.right p {
-  grid-column-start: begin;
-  grid-column-end: img-start;
-  grid-row-start: text-begin;
-  grid-row-end: base;
+  .bubble.right p {
+    grid-column-start: begin;
+    grid-column-end: img-start;
+    grid-row-start: text-begin;
+    grid-row-end: base;
+  }
 }
 
 /* form */
@@ -336,5 +436,64 @@ footer {
   form {
     max-width: 80%;
     margin: 0 auto 2rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .bubble img {
+    margin: 10px;
+    float: left;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 30px;
+    shape-outside: inset(5rem 5rem 5rem 5rem 0.5rem);
+  }
+  .bubble.right img {
+    float: right;
+  }
+  .bubble {
+    padding: 10px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
+    width: 100%;
+  }
+  .bubble figcaption {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 2px;
+  }
+  .bubble p {
+    margin: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .bubble {
+    padding: 10px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
+    width: 100%;
+  }
+  .bubble figcaption {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 2px;
+  }
+  .bubble p {
+    margin: 0.8em;
+  }
+  .bubble img {
+    margin: 10px;
+    float: left;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 20px;
+    shape-outside: inset(5rem 5rem 5rem 5rem 0.5rem);
+  }
+  .bubble.right img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 20px;
+    float: right;
   }
 }

@@ -108,3 +108,26 @@ logo.addEventListener('click', goToTop);
 window.addEventListener("hashchange", function () {
     window.scrollTo(window.scrollX, window.scrollY - 80);
 });
+
+
+
+// ______________________
+// menu toggle function
+function menuToggle(e){
+
+    e.preventDefault();
+    const navBar = document.querySelector('.nav-bar');
+
+    if (navBar.classList.contains('toggled-on')){
+        navBar.classList.remove('toggled-on');
+    } else {
+        navBar.classList.add('toggled-on');
+    }
+    
+}
+
+
+// menu
+
+const menuBtn = document.querySelector('.hamburger');
+menuBtn.addEventListener("click", menuToggle);
