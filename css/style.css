@@ -497,31 +497,3 @@ footer {
     float: right;
   }
 }
-
-/* .bubble {
-  column-count: 1;
-  column-gap: 50px;
-  padding: 50px;
-}
-.bubble figcaption {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 0.5em;
-  padding: 2px;
-}
-.bubble p {
-  text-align: justify;
-}
-.bubble img {
-  float: left;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 20px;
-  shape-outside: inset(5rem 5rem 5rem 5rem 0.5rem)
-}
-.bubble.right img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 20px;
-  float: right;
-} */
