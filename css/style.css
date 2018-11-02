@@ -96,12 +96,34 @@ footer {
   left: 90px;
 }
 
+
+.logo img:hover {
+  opacity: 0.3;
+}
+
+.logo img.text {
+  position:relative;
+  visibility:hidden;
+}
+
+.logo:hover .text {
+  left: 23px;
+  top: 30px;
+  font-size: 1.4rem;
+  position: fixed;
+  visibility:visible;
+  color: rgb(255, 252, 250);
+}
+
+
+
 /* - - - - - - - - */
 /* responsive menu */
 /* - hide the h2 */
 .nav-bar h2 {
   display: none;
 }
+
 
 .menu {
   display: none;
