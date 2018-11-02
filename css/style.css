@@ -77,7 +77,7 @@ footer {
 }
 /* hide the h2 */
 .nav-bar h2 {
-  display : none;
+  display: none;
 }
 
 .logo {
@@ -161,7 +161,7 @@ main {
 }
 /* hide the h4 */
 .sections.intro article h4 {
-  display : none;
+  display: none;
 }
 .round-img img {
   border-radius: 75px;
@@ -172,67 +172,70 @@ main {
   margin-top: 0.5rem;
 }
 
-/* r the team */
-.bubble {
-  display: grid;
-  grid-template-columns: [s] 1fr [begin] 1fr [img-end] 5fr [text-end] 1fr [e];
-  grid-template-rows: [s] 10px [roof] 20px [gap] 10px [text-begin] auto [base] 10px [e];
-}
+/* about the team */
+/* grid */
+@media only screen and (min-width: 1000px;) {
+  .bubble {
+    display: grid;
+    grid-template-columns: [s] 1fr [begin] 1fr [img-end] 5fr [text-end] 1fr [e];
+    grid-template-rows: [s] 10px [roof] 20px [gap] 10px [text-begin] auto [base] 10px [e];
+  }
 
-.bubble img {
-  width: 200px;
-  height: 200px;
-  grid-column-start: begin;
-  grid-column-end: img-end;
-  grid-row-start: roof;
-  grid-row-end: base;
-  border-radius: 50px;
-}
+  .bubble img {
+    width: 12rem;
+    height: 12rem;
+    grid-column-start: begin;
+    grid-column-end: img-end;
+    grid-row-start: roof;
+    grid-row-end: base;
+    border-radius: 50px;
+  }
 
-.bubble figcaption {
-  font-weight: bold;
-  font-size: 1.5em;
-  margin: 0.5em;
-  padding: 2px;
-  grid-column-start: img-end;
-  grid-column-end: text-end;
-  grid-row-start: roof;
-  grid-row-end: text-begin;
-}
+  .bubble figcaption {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 2px;
+    grid-column-start: img-end;
+    grid-column-end: text-end;
+    grid-row-start: roof;
+    grid-row-end: text-begin;
+  }
 
-.bubble p {
-  margin: 0.8em;
-  grid-column-start: img-end;
-  grid-column-end: text-end;
-  grid-row-start: text-begin;
-  grid-row-end: base;
-}
+  .bubble p {
+    margin: 0.8em;
+    grid-column-start: img-end;
+    grid-column-end: text-end;
+    grid-row-start: text-begin;
+    grid-row-end: base;
+  }
 
-.bubble.right {
-  display: grid;
-  grid-template-columns: [s] 1fr [begin] 5fr [img-start] 1fr [img-end] 1fr [e];
-  grid-template-rows: [s] 10px [roof] 20px [gap] 10px [text-begin] auto [base] 10px [e];
-}
+  .bubble.right {
+    display: grid;
+    grid-template-columns: [s] 1fr [begin] 5fr [img-start] 1fr [img-end] 1fr [e];
+    grid-template-rows: [s] 10px [roof] 20px [gap] 10px [text-begin] auto [base] 10px [e];
+  }
 
-.bubble.right img {
-  grid-column-start: img-start;
-  grid-column-end: img-end;
-  grid-row-start: roof;
-  grid-row-end: base;
-}
+  .bubble.right img {
+    grid-column-start: img-start;
+    grid-column-end: img-end;
+    grid-row-start: roof;
+    grid-row-end: base;
+  }
 
-.bubble.right figcaption {
-  grid-column-start: begin;
-  grid-column-end: img-start;
-  grid-row-start: roof;
-  grid-row-end: text-begin;
-}
+  .bubble.right figcaption {
+    grid-column-start: begin;
+    grid-column-end: img-start;
+    grid-row-start: roof;
+    grid-row-end: text-begin;
+  }
 
-.bubble.right p {
-  grid-column-start: begin;
-  grid-column-end: img-start;
-  grid-row-start: text-begin;
-  grid-row-end: base;
+  .bubble.right p {
+    grid-column-start: begin;
+    grid-column-end: img-start;
+    grid-row-start: text-begin;
+    grid-row-end: base;
+  }
 }
 
 /* form */
@@ -339,8 +342,89 @@ footer {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
+  .bubble img {
+    margin: 10px;
+    float: left;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 30px;
+    shape-outside: inset(5rem 5rem 5rem 5rem 0.5rem);
+  }
+  .bubble.right img {
+    float: right;
+  }
+  .bubble {
+    padding: 10px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
+    width: 100%;
+  }
+  .bubble figcaption {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 2px;
+  }
   .bubble p {
-    `
+    margin: 0.8em;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .bubble {
+    padding: 10px 10px 10px 0px;
+    margin: 10px 10px 10px 0px;
+    width: 100%;
+  }
+  .bubble figcaption {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 2px;
+  }
+  .bubble p {
+    margin: 0.8em;
+  }
+  .bubble img {
+    margin: 10px;
+    float: left;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 20px;
+    shape-outside: inset(5rem 5rem 5rem 5rem 0.5rem);
+  }
+  .bubble.right img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 20px;
+    float: right;
+  }
+}
+
+/* .bubble {
+  column-count: 1;
+  column-gap: 50px;
+  padding: 50px;
+}
+.bubble figcaption {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0.5em;
+  padding: 2px;
+}
+.bubble p {
+  text-align: justify;
+}
+.bubble img {
+  float: left;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 20px;
+  shape-outside: inset(5rem 5rem 5rem 5rem 0.5rem)
+}
+.bubble.right img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 20px;
+  float: right;
+} */
