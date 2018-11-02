@@ -42,6 +42,7 @@
 1. Title overlaps on navbar 
 ![alt text](https://user-images.githubusercontent.com/36998110/47917714-3fb9a780-dea2-11e8-8998-c06bea209fbd.png)
 
+
 2. Image should be shrunk 
 3. Text should be wrapping around images
     
