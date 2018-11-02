@@ -1,4 +1,3 @@
-
 /* body styles */
 body {
   /* font-family: 'Charmonman', cursive; */
@@ -174,7 +173,7 @@ main {
 
 /* about the team */
 /* grid */
-@media only screen and (min-width: 1000px;) {
+@media only screen and (min-width: 1000px) {
   .bubble {
     display: grid;
     grid-template-columns: [s] 1fr [begin] 1fr [img-end] 5fr [text-end] 1fr [e];
