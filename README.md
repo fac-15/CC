@@ -46,3 +46,7 @@
 **Stretch course**
 1. Search function on navbar
 2. Display correct section more clearly when the profile pictures/navbar clicked
+
+**Things to bear in mind more in the future:**
+- Contrast of foreground (text) and background (gradient) colours could be srutinsed a bit better.  
+This may get tricky when the background is a gradient and not a solid colour. [Webaim contrast checker tool](https://webaim.org/resources/contrastchecker)
