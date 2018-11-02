@@ -142,7 +142,7 @@ body {
   color: rgb(4, 104, 101);
   background: linear-gradient(
       217deg,
-      rgba(4, 104, 101, 0.9),
+      rgba(4, 104, 101, 0.6),
       rgba(250, 100, 0, 0) 70%
     ),
     linear-gradient(127deg, rgba(73, 220, 177, 0.8), rgba(0, 216, 150, 0) 70%),
@@ -208,6 +208,10 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+/* hide the h2 */
+.nav-bar h2 {
+  display: none;
 }
 
 .logo {
@@ -289,6 +293,10 @@ main {
   padding: 20px;
   box-sizing: border-box;
 }
+/* hide the h4 */
+.sections.intro article h4 {
+  display: none;
+}
 .round-img img {
   border-radius: 75px;
   width: 150px;
@@ -300,8 +308,7 @@ main {
 
 /* about the team */
 /* grid */
-
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px;) {
   .bubble {
     display: grid;
     grid-template-columns: [s] 1fr [begin] 1fr [img-end] 5fr [text-end] 1fr [e];
