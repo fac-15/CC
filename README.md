@@ -50,3 +50,4 @@
 **Things to bear in mind more in the future:**
 - Contrast of foreground (text) and background (gradient) colours could be srutinsed a bit better.  
 This may get tricky when the background is a gradient and not a solid colour. [Webaim contrast checker tool](https://webaim.org/resources/contrastchecker)
+- Always add reset css first, **before** main css. This broke styling when someone separated the two.
