@@ -306,7 +306,7 @@ main {
   margin-top: 0.5rem;
 }
 
-/* about the team */
+/* r the team */
 .bubble {
   display: grid;
   grid-template-columns: [s] 1fr [begin] 1fr [img-end] 5fr [text-end] 1fr [e];
@@ -470,5 +470,11 @@ footer {
   form {
     max-width: 80%;
     margin: 0 auto 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bubble p {
+    `
   }
 }
