@@ -122,3 +122,9 @@ const goToTop = function() {
 
 const logo = document.querySelector('.logo');
 logo.addEventListener('click', goToTop);
+
+
+
+window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 80);
+});
