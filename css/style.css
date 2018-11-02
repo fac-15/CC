@@ -96,89 +96,75 @@ footer {
   left: 90px;
 }
 
-
-
-
-
-
-
 /* - - - - - - - - */
 /* responsive menu */
 /* - hide the h2 */
 .nav-bar h2 {
-  display : none;
+  display: none;
 }
 
 .menu {
   display: none;
 }
 .hamburger {
-  width : 3rem;
-  height : 2.5rem;
-  cursor : pointer;
+  width: 3rem;
+  height: 2.5rem;
+  cursor: pointer;
 }
 .hamburger > div {
-  width : 100%;
-  height : .5rem;
-  background-color : rgb(4, 104, 101);
-  margin-top : .5rem;
-  transform-origin : 0 0;
-  transition : transform ease-in-out .5s;
+  width: 100%;
+  height: 0.5rem;
+  background-color: rgb(4, 104, 101);
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  transform-origin: 0 0;
+  transition: transform ease-in-out 0.5s;
 }
 .hamburger > div:first-child {
-  margin-top : 0;
+  margin-top: 0;
 }
-
-
 
 @media only screen and (max-width: 599px) {
   /* menu toggled class - added to nav-bar */
   .toggled-on {
     /* margin-top : 150px; */
-    height : 250px;
-    text-align : center;
+    height: 250px;
+    text-align: center;
   }
   .toggled-on nav {
-    width : 100%;
+    width: 100%;
   }
   .toggled-on .menu {
-    display : block;
-    padding-top : 40px;
+    display: block;
+    padding-top: 40px;
   }
 
   /* button and hamburger */
   .toggled-on #menu-button {
-    position : absolute;
-    top : -3px;
-    right : 12px;
+    position: absolute;
+    top: -3px;
+    right: 12px;
   }
   .toggled-on .hamburger > div:nth-child(1) {
-    transform : skew(0deg,34deg);
+    transform: skew(0deg, 34deg);
   }
   .toggled-on .hamburger > div:nth-child(2) {
-    visibility : hidden;
+    visibility: hidden;
   }
   .toggled-on .hamburger > div:nth-child(3) {
-    transform : skew(0deg,-34deg);
+    transform: skew(0deg, -34deg);
   }
-
 
   /* make menu items larger */
   .toggled-on .menu-item {
-    margin-top : 1rem;
+    margin-top: 1rem;
   }
   .toggled-on .menu-item a {
-    font-size : 1.25rem;
-    padding : .5rem;
-    color : white;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    color: white;
   }
 }
-
-
-
-
-
-
 
 /* menu list items */
 .menu-item a {
@@ -189,9 +175,8 @@ footer {
 .menu-item a:hover,
 .menu-item a:focus,
 .menu-item a:active {
-  text-decoration : underline;
+  text-decoration: underline;
 }
-
 
 @media only screen and (min-width: 600px) {
   /* reveal the menu */
@@ -201,14 +186,9 @@ footer {
     justify-content: space-between;
   }
   #menu-button {
-    display : none;
+    display: none;
   }
 }
-
-
-
-
-
 
 /* - - - - - - - - */
 main {
